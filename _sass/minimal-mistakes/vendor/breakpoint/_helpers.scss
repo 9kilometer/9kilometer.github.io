@@ -25,7 +25,7 @@
   $unit: unit($value);
 
   @if $unit == 'px' {
-    @return $value / 16px * 1em;
+    @return $value / 16px * 1em;  /* 기본 폰트 사이즈(웹에서만?) 14px이하로 하면 웹에서도 모바일 UI로 보인다. */
   }
   @else if $unit == '%' {
     @return $value / 100% * 1em;

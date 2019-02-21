@@ -75,13 +75,18 @@
   p,
   li,
   dl {
-    // font-size: 1em;
-    font-size:0.9em;
+    font-size: 1em;
   }
 
   /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
+
+    /* 문단과 코드블럭 사이의 margin 조절 */
+    & + div.highlighter-rouge {
+      margin-top: -($indent-var);
+      margin-bottom: 0.4em;
+    }
 
     /* sibling indentation*/
     @if $paragraph-indent == true {

@@ -13,7 +13,7 @@ body {
   padding: 0;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: 1.7;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -47,7 +47,7 @@ h3 {
 }
 
 h4 {
-  font-size: $type-size-6;
+  font-size: $type-size-h4;
 }
 
 h5 {

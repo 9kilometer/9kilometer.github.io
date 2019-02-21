@@ -259,18 +259,24 @@ This allows you to denote <var>variables</var>.
 
 ---
 
-### 의문점
-- 데모사이트에선 nested list의 글자 크기가 일정한데, 여기선 안으로 들어갈 수록 글자가 작아진다. 화면 오른쪽의 toc에도 같은 현상이 나타난다.
-  - 글자 크기가 작아지는 저 현상이 어디서 일어나는 지 모르겠는게 문제다... scss 파일들 여기저기 뒤져봤지만 찾지 못함ㅠㅠ 언젠간 프론트쪽 공부를 하고 깨닫게 되면 고치는 것으로...
-
 <h3>그 외 기록 - 폰트 설정</h3>
 <h4>폰트 추가 & 변경</h4>
+```scss
+/* font-face 추가 */
+@font-face {
+   font-family: "myFont";
+   src: url("/assets/fonts/myFont.ttf") format('truetype');
+}
+$myFont: "myFont";
+/* css import */
+@import "/assets/fonts/kopub/css/myFont2.css";
+$myFont2: "myFont2", sans-serif !default;
+```
 
-<h4>폰트 크기</h4>
-- **포스트 제목 등**  
+<h4>폰트 크기</h4>  
 포스트 제목이나 본문 제목(`h1`~`h6`), 인용구, 코드 블럭 등의 글자 크기는 `_variables.scss`에서 설정된 `$type-size-[1-8]`을 사용한다. 글자 크기를 변경하길 원하는 부분이 어떤 변수를 가져다 쓰는 지 확인하고 해당 변수의 값을 수정하거나, `_base.scss`에서 직접 원하는 값을 넣어주자.  
 **_variables.scss**
-  ```scss
+```scss
   /* type scale */
   $type-size-1: 2.441em !default; // ~39.056px  
   $type-size-2: 1.953em !default; // ~31.248px
@@ -285,21 +291,10 @@ This allows you to denote <var>variables</var>.
 ```scss
   h1 {
   margin-top: 0;
-  font-size: $type-size-3; // 이 부분을 직접 변경
+  font-size: $type-size-3; // 이 부분 변경
   }
 
   h2 {
   font-size: $type-size-4;
-  }
-```
-
-
-- **일반 문단**  
-`_page.scss`에서 해당 부분의 폰트 크기를 변경한다.
-```scss
-p,
-  li,
-  dl {
-    font-size:0.9em; 
   }
 ```
