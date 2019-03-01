@@ -31,6 +31,9 @@ h6 {
   line-height: 1.2;
   font-family: $header-font-family;
   font-weight: bold;
+  hr + & {
+    margin-top: 1.5em;
+  }
 }
 
 h1 {
@@ -184,7 +187,8 @@ hr {
   display: block;
   margin: 1em 0;
   border: 0;
-  border-top: 1px solid $border-color;
+  // border-top: 1px solid $border-color;
+  border-top: 1.5px solid $light-gray;
 }
 
 /* lists */

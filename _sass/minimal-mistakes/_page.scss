@@ -72,6 +72,10 @@
     border-bottom: 1px solid $border-color;
   }
 
+  header + & {
+    margin-top: 2.5em; /* custom: 헤더 이미지 없을 때 제목과 본문 사이의 간격 증가 */
+  }
+
   p,
   li,
   dl {
@@ -82,7 +86,7 @@
   p {
     margin: 0 0 $indent-var;
 
-    /* 문단과 코드블럭 사이의 margin 조절 */
+    /* custom: 문단과 코드블럭 사이의 margin 조절 */
     & + div.highlighter-rouge {
       margin-top: -($indent-var);
       margin-bottom: 0.4em;
