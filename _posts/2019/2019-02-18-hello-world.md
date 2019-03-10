@@ -7,7 +7,6 @@ last_modified_at: 2019-02-21T23:00:00
 category: record
 tag: 
     - jekyll
-    - 기록
 toc: true
 ---
 

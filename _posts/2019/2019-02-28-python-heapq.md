@@ -4,9 +4,9 @@ title: "[Python] 파이썬 기본 모듈 - heapq"
 # header: 
 #     overlay_image: /assets/resources/post_header.jpg
 last_modified_at: 2019-02-28T23:00:00
-category: PYTHON
+category: study
 tag: 
-    - python
+    - PYTHON
     - heap
 ---
 
