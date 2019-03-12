@@ -5,6 +5,7 @@ category: record
 tag: 
     - PYTHON
     - airflow 
+    - mysql
 ---
 
 에어플로우 버전 1.10부터 모든 관련 테이블에서 DAG 정보를 삭제하는 커맨드가 추가되었다. CLI와 REST API로 사용 가능하고, 웹 UI에도 삭제 버튼이 생겼다. [참조](https://stackoverflow.com/questions/40651783/airflow-how-to-delete-a-dag)  
