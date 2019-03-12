@@ -92,6 +92,11 @@
       margin-bottom: 0.4em;
     }
 
+    /* custom: 문단과 리스트 사이의 margin 조절 */
+    & + ul {
+      margin-top: -($indent-var) + 0.5em;
+    }
+
     /* sibling indentation*/
     @if $paragraph-indent == true {
       & + p {

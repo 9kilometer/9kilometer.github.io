@@ -163,7 +163,9 @@ $x-large: 1280px !default;
    ========================================================================== */
 
 $right-sidebar-width-narrow: 200px !default;
-$right-sidebar-width: 300px !default;
+/* custom: 페이지 오른쪽의 빈공간(?) 영역 조절 */
+// $right-sidebar-width: 300px !default;
+$right-sidebar-width: 200px !default;
 $right-sidebar-width-wide: 400px !default;
 
 /*
