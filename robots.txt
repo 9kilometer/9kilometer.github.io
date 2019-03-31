@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+User-agent: *
+Disallow: /about/
+
+Sitemap: https://9kilometer.github.io/sitemap.xml
