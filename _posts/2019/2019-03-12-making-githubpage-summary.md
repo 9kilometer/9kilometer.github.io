@@ -25,3 +25,5 @@ sitemap과 feed를 만들어 등록했다.
 [https://gmlwjd9405.github.io/2017/10/20/include-blog-in-a-GoogleSearchEngine.html](https://gmlwjd9405.github.io/2017/10/20/include-blog-in-a-GoogleSearchEngine.html)
 - 네이버  
 [https://gmlwjd9405.github.io/2017/10/21/include-blog-in-a-NaverSearchEngine.html](https://gmlwjd9405.github.io/2017/10/21/include-blog-in-a-NaverSearchEngine.html)
+
+(+ 내용 추가) 주소 추가할 때 `https`로 해야 수집이 제대로 되는 것 같다. `http`로 하니까 리디렉션 때문인건지 며칠을 기다려도 수집이 안 되더라...  
